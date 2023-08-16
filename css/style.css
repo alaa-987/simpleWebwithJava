@@ -1,0 +1,212 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color: white ;
+    --back-color:  rgba(214, 46, 51 , 0.6);
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-image: url(../images/photo1692057842.jpeg);
+}
+.homeLayer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--back-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-content{
+    text-align: center;
+}
+.home-content h2{
+    font-size: 60px;
+}
+.home-content p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 18px;
+}
+.sideNav{
+    position: fixed;
+    top: 0;
+    left: -400px;
+    /* left: 0; */
+    width: 25%;
+    height: 100vh;
+    background-color: black;
+    transition: 1s;
+}
+.sideNav ul{
+    list-style-type: none;
+    margin-top: 90px;
+}
+.sideNav ul li{
+    font-size: 30px;
+    margin-top: 30px;
+}
+.sideNav a{
+    list-style-type: none;
+    text-decoration: none;
+    cursor: pointer;
+    color: #818181;
+    transition: 0.3s;
+    color: var(--main-color);
+}
+.sideNav a:hover{
+    color: var(--back-color);
+}
+.closeBtn{
+   position: absolute;
+   right: 10px;
+   font-size: 30px;
+   cursor: pointer;
+}
+.closeBtn i:hover{
+    color: var(--back-color);
+}
+.openNav{
+    position: absolute;
+    /* left: 25%; */
+    left: 0;
+    top: 50%;
+    font-size: 30px;
+    cursor: pointer;
+    color: var(--main-color);
+    transition: 1s;
+}
+.active{
+    left: 0;
+}
+.activeOpen{
+    left: 25%;
+}
+.details{
+    width: 100%;
+    background-image: url(../images/photo1692064802.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.detailsLayer{
+    width: 100%;
+    background-color: var(--back-color);
+}
+/* .count-chars{
+    border: 2px solid black;
+    
+} */
+.tim{
+    padding: 50px;
+    border: 1px solid #FFF;
+    font-weight: 500;
+    font-size: 30px;
+    width: 250px;
+    height: 100px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-color);
+}
+
+.headText{
+    padding: 30px;
+    margin: 0;
+    background-color: rgba(214, 46, 51 , 0.6);
+    cursor: pointer;
+    width: 700px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headText h3{
+    font-size: 2rem;
+}
+.conText{
+    padding: 10px;
+    background-color: #ccc;
+    width: 700px;
+    display: none;
+}
+.contactus .contactText h2{
+    text-transform: uppercase;
+    font-size: 35px;
+    color: #444;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.contactus .contactText p{
+    text-align: center ;
+    color: #777;
+}
+.contactus .contactInfoH p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #777;
+    text-align: center;
+}
+.contactDetails p{
+    margin-bottom: 35px;
+    font-size: 20px;
+    line-height: 26px;
+    color: #777;
+}
+.contactDetails i{
+    color: #444;
+}
+.contactDetails span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-envelope{
+  margin-bottom: 30px;
+}
+.pred {
+    color: red !important;
+}
+.btn-danger{
+    border-radius: 0;
+}
+.fa-phone-flip{
+    margin-bottom: 30px;
+}
+.contactIcons i{
+  width: 40px;
+  height: 40px;
+  color: #777;
+  border: 1px solid #777;
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.contactIcons i:hover{
+    background-color: rgb(207, 28, 28);
+    color: var(--main-color);
+}
+.form-control{
+    border-radius: 0;
+    border-color: #777;
+}
+::placeholder{
+    color: #777;
+}
+/* textarea{
+    width: 300px;
+} */
